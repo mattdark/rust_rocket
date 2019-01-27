@@ -125,8 +125,6 @@ https://rocket.rs/
 
 ---
 
----
-
 ## Methods
 
 - get
@@ -175,6 +173,7 @@ https://rocket.rs/
 ## Using templates
 
 ----
+
 ### Cargo.toml
 
 ```
@@ -187,21 +186,17 @@ https://rocket.rs/
 ```
 
 ----
+
 ### src/main.rs
 
 ```
   ...
   extern crate rocket_contrib;
-  use std::collections::HashMap;
-  use crate::handlebars::{to_json};
   use rocket_contrib::templates::{template, handlebars}
 
   #[get("/")]
   fn index() -> Template {
-      let variable = "value";
-      let mut data = HashMap::new();
-      data.insert("v", &variable);
-      Template::render("index", &data)
+      Template::render("index")
   }
   ...
   fn main() {
