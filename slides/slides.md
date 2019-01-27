@@ -125,13 +125,6 @@ https://rocket.rs/
 
 ---
 
-## Requests
-
-```
-  #[get("/world")]
-  fn handler() { .. }
-```
-
 ---
 
 ## Methods
@@ -144,20 +137,17 @@ https://rocket.rs/
 - patch <!-- .element: class="fragment" -->
 - options <!-- .element: class="fragment" -->
 
-----
-
-```
-  #[post("/")]
-```
-
 ---
 
 ## Dynamic Paths
 
 ```
+  ...
+  use rocket::http::RawStr;
+
   #[get("/hello/<name>")]
   fn hello(name: &RawStr) -> String {
-      format("Hello, {}!", name.as_string())
+      format("Hello, {}!", name.as_str())
   }
 ```
 
