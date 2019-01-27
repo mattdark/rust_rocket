@@ -90,7 +90,7 @@ https://rocket.rs/
   }
 
   fn main() {
-      rocket::ignite().mount("/", routes![index]).launch;
+      rocket::ignite().mount("/", routes![index]).launch();
   }
 ```
 
@@ -176,7 +176,7 @@ https://rocket.rs/
   }
 
   fn main() {
-      rocket::ignite().mount("/", routes![index, files]).launch
+      rocket::ignite().mount("/", routes![index, files]).launch();
   }
 ```
 
