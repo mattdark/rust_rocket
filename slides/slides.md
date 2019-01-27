@@ -74,11 +74,6 @@ https://rocket.rs/
 
   [dependencies]
   rocket = "0.4"
-  handlebars = "1.1.0"
-
-  [dependencies.rocket_contrib]
-  version = "0.4"
-  features = ["handlebars_templates"]
 ```
 
 ----
@@ -188,6 +183,21 @@ https://rocket.rs/
 ---
 
 ## Using templates
+
+----
+### Cargo.toml
+
+```
+  ...
+  handlebars = "1.1.0"
+
+  [dependencies.rocket_contrib]
+  version = "0.4"
+  features = ["handlebars_templates"]
+```
+
+----
+### src/main.rs
 
 ```
   ...
