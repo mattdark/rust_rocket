@@ -192,7 +192,7 @@ https://rocket.rs/
 ```
   ...
   extern crate rocket_contrib;
-  use rocket_contrib::templates::{template, handlebars}
+  use rocket_contrib::templates::{template, handlebars};
 
   #[get("/")]
   fn index() -> Template {
