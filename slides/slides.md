@@ -41,6 +41,26 @@ https://rocket.rs/
   $ rustup override set nightly
 ```
 
+---
+
+## Directory structure
+
+- src
+- static <!-- .element: class="fragment" -->
+- templates <!-- .element: class="fragment" -->
+- Cargo.toml <!-- .element: class="fragment" -->
+
+---
+
+## Templates
+
+- Handlebars
+- Tera <!-- .element: class="fragment" -->
+
+---
+
+## Hello, world!
+
 ----
 
 ### Cargo.toml
@@ -61,11 +81,9 @@ https://rocket.rs/
   features = ["handlebars_templates"]
 ```
 
----
-
-## Hello, world!
-
 ----
+
+### src/main.rs
 
 ```
   #![feature(proc_macro_hygiene, decl_macro)]
@@ -150,16 +168,7 @@ https://rocket.rs/
 
 ---
 
-## Directory structure
-
-- src
-- static <!-- .element: class="fragment" -->
-- templates <!-- .element: class="fragment" -->
-- Cargo.toml <!-- .element: class="fragment" -->
-
----
-
-### static
+## Static files
 
 ```
   ...
@@ -178,12 +187,7 @@ https://rocket.rs/
 
 ---
 
-## Templates
-
-- Handlebars
-- Tera <!-- .element: class="fragment" -->
-
-----
+## Using templates
 
 ```
   ...
